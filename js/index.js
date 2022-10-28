@@ -4,7 +4,7 @@ import { Pipes } from "./pipes.js";
 export const canvas = document.getElementById("canvas");
 export const ctx = canvas.getContext("2d");
 
-class Time {
+export class Time {
     static then = Date.now();
     static now = Date.now();
     static delta = 0;
@@ -32,8 +32,7 @@ export default class Main {
     static Update() {
         Time.Update();
         Player.Update(Time.delta);
-        if(Time.tick % 100 == 0)
-            Pipes.New();
+
         Pipes.Update(Time.delta);
         Main.Draw();
         requestAnimationFrame(Main.Update);

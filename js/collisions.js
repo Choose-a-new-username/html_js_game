@@ -1,4 +1,4 @@
-export class Collision {
+export default class Collision {
     static Collides(a, b, e, f, g, h) {
        return a > e && a < e + g && b > f && b < f + h;  
     }

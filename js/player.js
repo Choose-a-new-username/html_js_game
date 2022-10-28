@@ -15,7 +15,7 @@ export class Player {
         if(Main.keys["Space"]) {
             if(!this.space_bar) {
                 this.space_bar = true;
-                this.yvel = -170;
+                this.yvel = -190;
             }
         } else {
             this.space_bar = false;
