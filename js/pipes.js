@@ -17,6 +17,7 @@ export class Pipes {
     static Update(delta) {
         if(Time.tick % 100 == 0)
             Pipes.New();
+        
         for(let i = 0; i < this.pipes.length; i++)
             this.pipes[i].Update(delta);
     }
